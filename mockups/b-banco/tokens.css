@@ -1,0 +1,52 @@
+/* Direction B: test bench. Warm graphite, amber signal, dense spec-sheet grid. */
+:root {
+  --color-bg: #14130f;
+  --color-surface: #1d1b16;
+  --color-surface-hover: #25221c;
+  --color-line: #36322a;
+  --color-text: #ece6da;
+  --color-text-muted: #a89f8f;
+  --color-accent: #f0a93b;
+  --color-accent-hover: #ffbe5c;
+  --color-on-accent: #1a1406;
+  --color-status-live: #9cc987;
+  --color-status-wip: #f0a93b;
+  --color-status-private: #a89f8f;
+  --color-focus: #7fb8ff;
+
+  --font-display: "JetBrains Mono", "Consolas", monospace;
+  --font-body: "Instrument Sans", "Segoe UI", sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: clamp(2.25rem, 5.5vw, 4rem);
+  --leading-tight: 1.05;
+  --leading-body: 1.55;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --border-hair: 1px solid var(--color-line);
+  --content-max: 1200px;
+  --gutter: 16px;
+  --duration-fast: 160ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+  }
+}

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Jean Herrán, ingeniero de software</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=erode@400,500,600&display=swap">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="ui.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="mockup.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="toprow">
+      <a class="wordmark link" href="#">Jean Herrán</a>
+      <nav aria-label="Principal">
+        <a class="link" href="#proyectos">Proyectos</a>
+        <a class="link" href="#sobre-mi">Sobre mí</a>
+        <a class="link" href="#contacto">Contacto</a>
+      </nav>
+      <a class="link" href="cv.pdf" download>Descargar CV</a>
+    </div>
+    <h1 class="lines">
+      <span class="line"><span data-line style="--i:0">Software que llega</span></span>
+      <span class="line"><span data-line style="--i:1">a usuarios reales.</span></span>
+    </h1>
+    <p class="hero__lead">Soy <strong>Jean Herrán</strong>, ingeniero de sistemas. Hago apps Android, integraciones y web.</p>
+    <a class="button" href="#proyectos">Ver proyectos</a>
+  </header>
+
+  <main>
+    <section class="work" id="proyectos" aria-labelledby="h-proyectos">
+      <h2 id="h-proyectos">Proyectos</h2>
+
+      <article class="project project--wide">
+        <div class="project__visual" data-reveal>
+          <div data-ui aria-label="Ecualizador de Vinyls, puedes mover las bandas">
+            <div class="ui-bar"><span class="ui-title">Ecualizador</span><span class="ui-chip ui-chip--on" data-preset>Plano</span></div>
+            <div class="ui-panel">
+              <div class="eq">
+                <label>31<input type="range" min="-12" max="12" value="0" aria-label="31 Hz"><output>0 dB</output></label>
+                <label>62<input type="range" min="-12" max="12" value="0" aria-label="62 Hz"><output>0 dB</output></label>
+                <label>125<input type="range" min="-12" max="12" value="0" aria-label="125 Hz"><output>0 dB</output></label>
+                <label>250<input type="range" min="-12" max="12" value="0" aria-label="250 Hz"><output>0 dB</output></label>
+                <label>500<input type="range" min="-12" max="12" value="0" aria-label="500 Hz"><output>0 dB</output></label>
+                <label>1k<input type="range" min="-12" max="12" value="0" aria-label="1 kHz"><output>0 dB</output></label>
+                <label>2k<input type="range" min="-12" max="12" value="0" aria-label="2 kHz"><output>0 dB</output></label>
+                <label>4k<input type="range" min="-12" max="12" value="0" aria-label="4 kHz"><output>0 dB</output></label>
+                <label>8k<input type="range" min="-12" max="12" value="0" aria-label="8 kHz"><output>0 dB</output></label>
+                <label>16k<input type="range" min="-12" max="12" value="0" aria-label="16 kHz"><output>0 dB</output></label>
+              </div>
+            </div>
+            <div class="ui-bar"><span class="ui-sub">FLAC 24 bit / 96 kHz &middot; bit-perfect activo</span><div class="meter" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+          </div>
+        </div>
+        <div class="project__text">
+          <h3 data-reveal>Vinyls</h3>
+          <p data-reveal style="--d:1">Reproductor HiFi para Android que reproduce tus archivos locales sin pedir internet ni cuentas. Ecualizador de 10 bandas, modo bit-perfect y control remoto desde Wear OS.</p>
+          <p class="project__facts" data-reveal style="--d:2"><b>Publicado</b> &middot; código público &middot; Kotlin, Jetpack Compose, Media3</p>
+          <div class="project__links" data-reveal style="--d:3"><a class="link" href="#">Ver el código</a><a class="link" href="#">Play Store</a></div>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__visual" data-reveal>
+          <div data-ui aria-label="Tabla de riesgo de deserción con datos ficticios">
+            <div class="ui-bar"><span class="ui-title">Riesgo de deserción, cohorte 2024-2</span><span class="ui-chip">2 de 6 en riesgo alto</span></div>
+            <table class="ui-table ui-panel">
+              <thead><tr><th>Estudiante</th><th class="ui-hide-phone">Promedio</th><th class="ui-num">Probabilidad</th></tr></thead>
+              <tbody>
+                <tr><td>E-1031</td><td class="ui-hide-phone">2.8</td><td><div class="risk"><span style="width:82%"></span>0.82</div></td></tr>
+                <tr><td>E-1047</td><td class="ui-hide-phone">3.0</td><td><div class="risk"><span style="width:74%"></span>0.74</div></td></tr>
+                <tr><td>E-1012</td><td class="ui-hide-phone">3.4</td><td><div class="risk risk--mid"><span style="width:46%"></span>0.46</div></td></tr>
+                <tr><td>E-1058</td><td class="ui-hide-phone">3.6</td><td><div class="risk risk--low"><span style="width:21%"></span>0.21</div></td></tr>
+                <tr><td>E-1005</td><td class="ui-hide-phone">4.1</td><td><div class="risk risk--low"><span style="width:12%"></span>0.12</div></td></tr>
+                <tr><td>E-1063</td><td class="ui-hide-phone">4.4</td><td><div class="risk risk--low"><span style="width:7%"></span>0.07</div></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="project__text">
+          <h3 data-reveal>Predicción de deserción</h3>
+          <p data-reveal style="--d:1">Mi proyecto de grado: un modelo de machine learning que señala a los estudiantes con más riesgo de abandonar, para que la universidad actúe antes.</p>
+          <p class="project__facts" data-reveal style="--d:2"><b>Terminado</b> &middot; código público, MIT &middot; Python, scikit-learn</p>
+          <div class="project__links" data-reveal style="--d:3"><a class="link" href="#">Ver el código</a></div>
+        </div>
+      </article>
+
+      <article class="project project--flip">
+        <div class="project__visual" data-reveal>
+          <div data-ui aria-label="Registro de envíos de facturas con datos ficticios">
+            <div class="ui-bar"><span class="ui-title">Envíos de hoy</span><span class="ui-chip ui-chip--on">En línea</span></div>
+            <ul class="log ui-panel">
+              <li><i class="dot"></i><span>Factura FE-2041 &middot; API de facturación</span><span>210 ms</span></li>
+              <li><i class="dot"></i><span>Factura FE-2041 &middot; API de inventario</span><span>184 ms</span></li>
+              <li><i class="dot"></i><span>Factura FE-2042 &middot; API de facturación</span><span>232 ms</span></li>
+              <li><i class="dot dot--wait"></i><span>Factura FE-2042 &middot; API de inventario, reintento 1</span><span>1.2 s</span></li>
+              <li><i class="dot"></i><span>Factura FE-2043 &middot; API de facturación</span><span>198 ms</span></li>
+            </ul>
+            <span class="ui-sub">3 facturas, 5 envíos, 1 reintento automático, 0 pendientes</span>
+          </div>
+        </div>
+        <div class="project__text">
+          <h3 data-reveal>Facturación veterinaria</h3>
+          <p data-reveal style="--d:1">Sistema entregado a un cliente real. Reemplazó la facturación manual: cada factura se envía en tiempo real a dos APIs del cliente y se reintenta sola si una falla.</p>
+          <p class="project__facts" data-reveal style="--d:2"><b>En producción</b> &middot; código privado del cliente</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__visual" data-reveal>
+          <div data-ui aria-label="Tabla de posiciones con datos ficticios">
+            <div class="ui-bar"><span class="ui-title">Posiciones</span><span class="ui-chip">Marcador exacto 5, ganador 3</span></div>
+            <table class="ui-table ui-panel">
+              <thead><tr><th>Jugador</th><th class="ui-num">Exactos</th><th class="ui-num ui-hide-phone">Ganador</th><th class="ui-num">Puntos</th></tr></thead>
+              <tbody>
+                <tr><td>Laura</td><td class="ui-num">4</td><td class="ui-num ui-hide-phone">7</td><td class="ui-num">41</td></tr>
+                <tr><td>Andrés</td><td class="ui-num">3</td><td class="ui-num ui-hide-phone">8</td><td class="ui-num">39</td></tr>
+                <tr><td>Camila</td><td class="ui-num">3</td><td class="ui-num ui-hide-phone">6</td><td class="ui-num">33</td></tr>
+                <tr><td>Mateo</td><td class="ui-num">1</td><td class="ui-num ui-hide-phone">9</td><td class="ui-num">32</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="project__text">
+          <h3 data-reveal>Reto Mundialista</h3>
+          <p data-reveal style="--d:1">Pronósticos entre amigos por invitación, ahora rediseñado para varios torneos. Cada evento guarda sus datos aparte y el puntaje se calcula en el servidor, no en el navegador.</p>
+          <p class="project__facts" data-reveal style="--d:2"><b>En desarrollo</b> &middot; código privado &middot; React, Firebase</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="sobre-mi" aria-labelledby="h-sobre">
+      <h2 id="h-sobre">Sobre mí</h2>
+      <p class="about__text"><strong>Me llamo Jean Herrán</strong> y me gradué como <span class="mark mark--amber">ingeniero de sistemas en 2026</span>. Lo que más me interesa es el tramo final del software: cuando deja el computador de quien lo escribe y lo usa otra persona. Por eso mis proyectos terminan con algo entregado: una app que reproduce música sin pedir internet, un modelo que una universidad puede consultar y un sistema de <span class="mark mark--sage">facturación que usa un cliente</span> todos los días. Trabajo cómodo entre <span class="mark mark--slate">Android nativo</span> y la web, y disfruto los problemas de <span class="mark mark--sage">integración</span>, donde los datos tienen que llegar completos aunque la red falle. Escribo pruebas, configuro CI y leo la documentación antes de inventar algo. Busco un <span class="mark mark--slate">primer equipo</span> donde aprender de gente con más experiencia y aportar desde el primer mes. <a class="about__close mark mark--amber" href="#contacto">Hablemos.</a></p>
+    </section>
+
+    <section class="section skills" id="habilidades" aria-labelledby="h-hab">
+      <h2 id="h-hab">Habilidades</h2>
+      <table class="lineup">
+        <tbody>
+          <tr class="group"><th colspan="3" scope="colgroup">Móvil</th></tr>
+          <tr><td>Kotlin y Jetpack Compose</td><td>Vinyls</td><td>App publicada</td></tr>
+          <tr><td>Media3 y audio</td><td>Vinyls</td><td>Bit-perfect, EQ</td></tr>
+          <tr><td>Wear OS</td><td>Vinyls</td><td>Control remoto</td></tr>
+          <tr class="group"><th colspan="3" scope="colgroup">Web y datos</th></tr>
+          <tr><td>React</td><td>Reto Mundialista</td><td>En desarrollo</td></tr>
+          <tr><td>Firebase y Firestore</td><td>Reto Mundialista</td><td>Reglas, servidor</td></tr>
+          <tr><td>Integración con APIs REST</td><td>Facturación</td><td>En producción</td></tr>
+          <tr><td>Python y scikit-learn</td><td>Deserción</td><td>Proyecto de grado</td></tr>
+          <tr class="group"><th colspan="3" scope="colgroup">Forma de trabajo</th></tr>
+          <tr><td>Git y GitHub Actions</td><td>Todos</td><td>CI en cada cambio</td></tr>
+          <tr><td>Análisis estático y pruebas</td><td>Vinyls</td><td>detekt en CI</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="h-contacto">
+      <h2 id="h-contacto" class="contact__title">Contacto</h2>
+      <a class="contact__row" href="https://github.com/JeanC221" rel="noopener noreferrer">GitHub <span class="contact__handle">github.com/JeanC221</span></a>
+      <a class="contact__row" href="#" rel="noopener noreferrer">LinkedIn <span class="contact__handle">enlace pendiente</span></a>
+      <a class="contact__row" href="cv.pdf" download>CV en PDF <span class="contact__handle">Descargar</span></a>
+      <footer class="footer">
+        <span>Jean Herrán, 2026</span>
+        <span>HTML, CSS y JavaScript, sin frameworks</span>
+        <a class="link" href="#">Volver arriba</a>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>

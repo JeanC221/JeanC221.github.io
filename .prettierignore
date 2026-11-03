@@ -1,0 +1,9 @@
+node_modules/
+dist/
+mockups/
+.taste-skill/
+.impeccable/
+package-lock.json
+AGENTS.md
+CLAUDE.md
+.claude/

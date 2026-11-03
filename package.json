@@ -1,0 +1,36 @@
+{
+  "name": "portfolio-landing",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal portfolio landing page. Static HTML, CSS and JavaScript for GitHub Pages.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p jsconfig.json",
+    "lint": "eslint . && stylelint \"**/*.css\" --allow-empty-input && npm run lint:html && npm run check:lines",
+    "lint:html": "node scripts/lint-html.mjs",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "test": "vitest run",
+    "build": "node scripts/build.mjs",
+    "check:lines": "node scripts/check-lines.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "happy-dom": "^21.0.4",
+    "html-validate": "^11.4.0",
+    "prettier": "^3.9.10",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
+  }
+}

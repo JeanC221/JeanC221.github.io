@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comparador de direcciones visuales</title>
+  <style>
+    :root {
+      --bg: #e6e3dc;
+      --text: #1d1c1a;
+      --muted: #5c574e;
+      --frame: #ffffff;
+      --desktop-w: 1280px;
+      --desktop-h: 820px;
+      --desktop-scale: 0.6;
+      --mobile-w: 375px;
+      --mobile-h: 812px;
+    }
+    body { margin: 0; padding: 24px 16px; background: var(--bg); color: var(--text); font: 15px/1.5 system-ui, sans-serif; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 16px; margin: 32px 0 4px; }
+    p { margin: 0 0 12px; color: var(--muted); }
+    .row { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+    figure { margin: 0; }
+    figcaption { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+    .desktop {
+      width: calc(var(--desktop-w) * var(--desktop-scale));
+      height: calc(var(--desktop-h) * var(--desktop-scale));
+      overflow: hidden;
+      background: var(--frame);
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.2);
+    }
+    .desktop iframe {
+      width: var(--desktop-w);
+      height: var(--desktop-h);
+      transform: scale(var(--desktop-scale));
+      transform-origin: 0 0;
+    }
+    .mobile iframe { width: var(--mobile-w); height: var(--mobile-h); background: var(--frame); box-shadow: 0 1px 4px rgb(0 0 0 / 0.2); }
+    iframe { border: 0; display: block; }
+  </style>
+</head>
+<body>
+  <h1>Direcciones visuales para el portafolio</h1>
+  <p>Cada mockup se muestra a 1280px (escala 60%) y a 375px. Abre los enlaces para verlos a tamaño real.</p>
+
+  <h2>A. Cuaderno de ingeniería</h2>
+  <p>Papel cálido, tinta y un acento bermellón. Serif editorial, mucho aire, proyectos como filas. <a href="a-cuaderno/index.html">Abrir</a></p>
+  <div class="row">
+    <figure class="desktop-fig">
+      <figcaption>Escritorio 1280px</figcaption>
+      <div class="desktop"><iframe src="a-cuaderno/index.html" title="Mockup A escritorio"></iframe></div>
+    </figure>
+    <figure class="mobile">
+      <figcaption>Móvil 375px</figcaption>
+      <iframe src="a-cuaderno/index.html" title="Mockup A móvil"></iframe>
+    </figure>
+  </div>
+
+  <h2>B2. Banco de pruebas, revisado (recomendado)</h2>
+  <p>Misma paleta grafito y ámbar, sin los recursos que delatan a una IA: una sola serif (Erode), sin monoespaciada, sin líneas finas ni tarjetas, y cada proyecto mostrado con su propia interfaz. El ecualizador de Vinyls se puede mover. <a href="b2-banco/index.html">Abrir</a></p>
+  <div class="row">
+    <figure class="desktop-fig">
+      <figcaption>Escritorio 1280px</figcaption>
+      <div class="desktop"><iframe src="b2-banco/index.html" title="Mockup B2 escritorio"></iframe></div>
+    </figure>
+    <figure class="mobile">
+      <figcaption>Móvil 375px</figcaption>
+      <iframe src="b2-banco/index.html" title="Mockup B2 móvil"></iframe>
+    </figure>
+  </div>
+
+  <h2>B. Banco de pruebas</h2>
+  <p>Grafito cálido y ámbar. Monoespaciada para títulos, rejilla de tarjetas densa con ficha técnica. <a href="b-banco/index.html">Abrir</a></p>
+  <div class="row">
+    <figure class="desktop-fig">
+      <figcaption>Escritorio 1280px</figcaption>
+      <div class="desktop"><iframe src="b-banco/index.html" title="Mockup B escritorio"></iframe></div>
+    </figure>
+    <figure class="mobile">
+      <figcaption>Móvil 375px</figcaption>
+      <iframe src="b-banco/index.html" title="Mockup B móvil"></iframe>
+    </figure>
+  </div>
+</body>
+</html>

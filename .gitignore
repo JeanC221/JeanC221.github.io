@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+
+.taste-skill/
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+
+*.log
+npm-debug.log*
+
+.env
+.env.*
+!.env.example
+
+.DS_Store
+Thumbs.db

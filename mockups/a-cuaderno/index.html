@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mockup A - Cuaderno de ingeniería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="wrap">
+    <div class="topbar">
+      <span class="mono">J. Herrán / Portafolio</span>
+      <nav class="mono" aria-label="Principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <span class="mono">Jean Herrán &middot; Ingeniero de Sistemas</span>
+      <h1>Construyo software <em>que llega a usuarios reales.</em></h1>
+      <p>Desde apps Android nativas hasta integraciones en tiempo real con APIs de terceros. Recién graduado y buscando mi primer equipo.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="cv.pdf" download>Descargar CV (PDF)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section" id="proyectos" aria-labelledby="h-proyectos">
+      <div>
+        <span class="mono">01</span>
+        <h2 id="h-proyectos">Proyectos</h2>
+      </div>
+      <div>
+        <article class="project project--featured">
+          <div class="project__media mono" role="img" aria-label="Captura de Vinyls">captura 21:9</div>
+          <div>
+            <div class="project__meta mono">
+              <span class="status status--live">Publicado</span>
+              <span>Kotlin &middot; Jetpack Compose &middot; Media3 &middot; Wear OS</span>
+            </div>
+            <h3>Vinyls, reproductor HiFi para Android</h3>
+            <p>Reproductor de archivos locales sin permisos de red ni cuentas. Ecualizador de 10 bandas, modo bit-perfect, control remoto desde Wear OS y análisis estático con detekt en CI.</p>
+            <div class="project__links"><a href="#">Repositorio</a><a href="#">Play Store</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__media mono" role="img" aria-label="Gráfica del modelo de deserción">captura 16:10</div>
+          <div>
+            <div class="project__meta mono">
+              <span class="status status--live">Público</span>
+              <span>Python &middot; scikit-learn</span>
+            </div>
+            <h3>Predicción de deserción estudiantil</h3>
+            <p>Proyecto de grado: modelo de machine learning que identifica estudiantes en riesgo de abandonar sus estudios.</p>
+            <div class="project__links"><a href="#">Repositorio</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__media mono" role="img" aria-label="Captura de Reto Mundialista con datos ficticios">captura 16:10</div>
+          <div>
+            <div class="project__meta mono">
+              <span class="status status--wip">En desarrollo</span>
+              <span>React &middot; Firebase</span>
+            </div>
+            <h3>Reto Mundialista, plataforma de pronósticos</h3>
+            <p>Polla por invitación rediseñada como plataforma multi-evento: datos aislados por evento, puntaje calculado en el servidor y reglas de Firestore.</p>
+            <div class="project__links"><a href="#">Ver demo (datos ficticios)</a></div>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project__media mono" role="img" aria-label="Diagrama de la integración">diagrama 16:10</div>
+          <div>
+            <div class="project__meta mono">
+              <span class="status status--private">Privado &middot; cliente</span>
+              <span>Integración con 2 APIs</span>
+            </div>
+            <h3>Facturación electrónica para una clínica veterinaria</h3>
+            <p>Sistema interno entregado a un cliente que reemplazó la facturación manual con integración en tiempo real a dos APIs externas.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="sobre-mi" aria-labelledby="h-sobre">
+      <div>
+        <span class="mono">02</span>
+        <h2 id="h-sobre">Sobre mí</h2>
+      </div>
+      <div class="prose">
+        <p>Soy ingeniero de sistemas recién graduado. Me interesa el software que sale de la máquina del desarrollador: con pruebas, CI y un usuario real al otro lado.</p>
+        <p>Trabajo cómodo entre Android nativo y la web, y disfruto de los problemas de integración donde los datos tienen que llegar completos y a tiempo.</p>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades" aria-labelledby="h-hab">
+      <div>
+        <span class="mono">03</span>
+        <h2 id="h-hab">Habilidades</h2>
+      </div>
+      <div class="skills">
+        <div><h3 class="mono">Lenguajes</h3><ul><li>Kotlin</li><li>JavaScript / TypeScript</li><li>Python</li></ul></div>
+        <div><h3 class="mono">Móvil y web</h3><ul><li>Jetpack Compose</li><li>React</li><li>HTML y CSS</li></ul></div>
+        <div><h3 class="mono">Datos y backend</h3><ul><li>Firebase / Firestore</li><li>APIs REST</li><li>scikit-learn</li></ul></div>
+        <div><h3 class="mono">Prácticas</h3><ul><li>Git y GitHub Actions</li><li>Análisis estático</li><li>Pruebas</li></ul></div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto" aria-labelledby="h-contacto">
+      <div>
+        <span class="mono">04</span>
+        <h2 id="h-contacto">Contacto</h2>
+      </div>
+      <div class="contact">
+        <a href="https://github.com/JeanC221" rel="noopener">GitHub <span class="mono">github.com/JeanC221</span></a>
+        <a href="#" rel="noopener">LinkedIn <span class="mono">pendiente</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer mono">Hecho a mano con HTML, CSS y JavaScript.</footer>
+</body>
+</html>
