@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "ignoreFiles": ["node_modules/**", "dist/**", "mockups/**", ".taste-skill/**"],
+  "rules": {
+    "max-nesting-depth": 2,
+    "selector-max-id": 0,
+    "declaration-no-important": true
+  }
+}
