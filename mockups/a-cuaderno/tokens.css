@@ -1,0 +1,53 @@
+/* Direction A: engineering notebook. Warm paper, ink, one vermilion signal. */
+:root {
+  --color-paper: #f3efe6;
+  --color-paper-raised: #faf8f3;
+  --color-paper-sunk: #e8e2d4;
+  --color-ink: #1d1c1a;
+  --color-ink-muted: #5c574e;
+  --color-rule: #cfc6b4;
+  --color-accent: #b23d1a;
+  --color-accent-hover: #93300f;
+  --color-on-accent: #fffaf2;
+  --color-status-live: #2f6b3a;
+  --color-status-wip: #8a5a00;
+  --color-status-private: #5c574e;
+  --color-focus: #1f4fbf;
+
+  --font-display: "Newsreader", "Georgia", serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "Consolas", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: clamp(2.5rem, 6vw, 4.5rem);
+  --leading-tight: 1.1;
+  --leading-body: 1.6;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --border-hair: 1px solid var(--color-rule);
+  --content-max: 1120px;
+  --gutter: 16px;
+  --duration-fast: 160ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 40px;
+  }
+}

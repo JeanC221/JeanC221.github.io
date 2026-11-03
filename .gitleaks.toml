@@ -1,0 +1,16 @@
+# ==========================================
+# Gitleaks Configuration for Secret Scanning
+# ==========================================
+
+[allowlist]
+description = "Global Allowlist for Mock Data and Tests"
+paths = [
+  '''\.env\.example$''',
+  '''tests/mocks/.*''',
+  '''\.claude/.*'''
+]
+
+regexes = [
+  '''replace_with_.*''',
+  '''examplePublicKey.*'''
+]

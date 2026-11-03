@@ -1,0 +1,42 @@
+/* Direction B2: graphite ground, bone ink, amber accent. One serif face. */
+:root {
+  --color-ground: #14130f;
+  --color-surface: #1f1d18;
+  --color-surface-raised: #2a2720;
+  --color-ink: #ecebe7;
+  --color-muted: #b5aea2;
+  --color-accent: #f0a93b;
+  --color-accent-strong: #ffbe5c;
+  --color-accent-band: #e39a2c;
+  --color-on-accent: #17120a;
+  --color-mark-amber: #f0a93b;
+  --color-mark-sage: #a9cf96;
+  --color-mark-slate: #3b4d63;
+  --color-ok: #a9cf96;
+  --color-warn: #f0a93b;
+  --color-risk: #ff8a6b;
+  --color-focus: #8cc4ff;
+
+  --font-face: "Erode", "Georgia", serif;
+  --step-small: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.75rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --step-display: clamp(3rem, 9vw, 8.75rem);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-18: 72px;
+  --space-section: clamp(96px, 12vw, 176px);
+
+  --margin: clamp(16px, 3.4vw, 48px);
+  --radius: 0;
+  --t-press: 120ms;
+  --t-hover: 180ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

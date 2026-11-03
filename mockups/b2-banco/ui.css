@@ -1,0 +1,60 @@
+/* Interface fragments: cropped pieces of each project's own UI. */
+[data-ui] {
+  height: 100%;
+  padding: clamp(20px, 3vw, 48px);
+  padding-left: calc(4vw + clamp(20px, 3vw, 48px));
+  display: grid;
+  align-content: center;
+  gap: 16px;
+  font: 400 16px / 1.45 system-ui, "Segoe UI", Roboto, sans-serif;
+  color: var(--color-ink);
+}
+[data-ui] .ui-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+[data-ui] .ui-title { font-size: 20px; font-weight: 600; }
+[data-ui] .ui-sub { color: var(--color-muted); font-size: 14px; }
+[data-ui] .ui-panel { background: var(--color-surface-raised); border-radius: 12px; padding: 16px; }
+[data-ui] .ui-chip { font-size: 13px; padding: 4px 10px; border-radius: 999px; background: var(--color-ground); }
+[data-ui] .ui-chip--on { background: var(--color-accent); color: var(--color-on-accent); }
+[data-ui] .ui-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+[data-ui] .ui-table th { text-align: left; font-weight: 500; color: var(--color-muted); font-size: 13px; padding: 8px 10px; border-bottom: 1px solid var(--color-ground); }
+[data-ui] .ui-table td { padding: 10px; border-bottom: 1px solid var(--color-ground); }
+[data-ui] .ui-num { text-align: right; }
+
+[data-ui] .eq { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; align-items: end; }
+[data-ui] .eq label { display: grid; justify-items: center; gap: 8px; font-size: 12px; color: var(--color-muted); }
+[data-ui] .eq input {
+  writing-mode: vertical-lr;
+  direction: rtl;
+  width: 28px;
+  height: clamp(160px, 26svh, 260px);
+  accent-color: var(--color-accent);
+  cursor: grab;
+}
+[data-ui] .eq output { font-size: 12px; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+[data-ui] .meter { display: flex; gap: 3px; height: 28px; align-items: end; }
+[data-ui] .meter i { flex: 1; background: var(--color-mark-sage); height: 40%; transform-origin: bottom; }
+
+[data-ui] .risk { display: flex; align-items: center; gap: 8px; }
+[data-ui] .risk span { display: block; height: 8px; border-radius: 4px; background: var(--color-risk); }
+[data-ui] .risk--mid span { background: var(--color-warn); }
+[data-ui] .risk--low span { background: var(--color-ok); }
+
+[data-ui] .log li { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--color-ground); }
+[data-ui] .log { list-style: none; margin: 0; padding: 4px 16px; font-variant-numeric: tabular-nums; }
+[data-ui] .dot { width: 10px; height: 10px; border-radius: 50%; margin-top: 5px; background: var(--color-ok); }
+[data-ui] .dot--wait { background: var(--color-warn); }
+
+@media (prefers-reduced-motion: no-preference) {
+  [data-ui] .meter i { animation: level 1.4s ease-in-out infinite alternate; }
+  [data-ui] .meter i:nth-child(3n) { animation-duration: 0.9s; }
+  [data-ui] .meter i:nth-child(4n + 1) { animation-duration: 1.7s; }
+}
+@keyframes level { from { transform: scaleY(0.4); } to { transform: scaleY(2.2); } }
+
+@media (max-width: 767px) {
+  [data-ui] { padding: 20px; padding-left: calc(var(--margin) + 20px); font-size: 14px; }
+  [data-ui] .eq { gap: 2px; }
+  [data-ui] .eq input { width: 22px; height: 150px; }
+  [data-ui] .ui-hide-phone, [data-ui] .eq output { display: none; }
+  [data-ui] .ui-chip { white-space: nowrap; }
+}

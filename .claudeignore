@@ -1,0 +1,103 @@
+# ==========================================
+# .claudeignore - Context Optimization Rules
+# ==========================================
+
+# Dependencies & Package Managers
+node_modules/
+vendor/
+.venv/
+env/
+venv/
+
+# Lockfiles (Massive token consumption; let CLI/package manager handle them)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
+Cargo.lock
+Gemfile.lock
+poetry.lock
+
+# Build & Output Directories
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.svelte-kit/
+.astro/
+target/
+bin/
+obj/
+
+# Cache & Temporary Files
+.cache/
+.parcel-cache/
+.turbo/
+.swc/
+.eslintcache
+.prettiercache
+*.tmp
+*.temp
+
+# Testing & Coverage Reports
+coverage/
+.nyc_output/
+htmlcov/
+.pytest_cache/
+
+# Logs & Debug Traces
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# Heavy Media & Binary Assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.svg
+*.webp
+*.avif
+*.mp4
+*.webm
+*.mp3
+*.wav
+*.pdf
+*.zip
+*.tar.gz
+*.tgz
+*.7z
+
+# Fonts
+*.woff
+*.woff2
+*.eot
+*.ttf
+*.otf
+
+# Local Database Files
+*.sqlite
+*.sqlite3
+*.db
+*.ldb
+
+# OS & IDE Metadata
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
